@@ -1,23 +1,60 @@
 <div class="relative bg-[#445442]">
   <div class="mx-auto px-4 sm:px-24">
-    <div class="flex justify-center items-center py-6 md:justify-start md:space-x-10">
-      <!-- STORE NAME / STORE LOGO -->
-      <div class="flex flex-col">
-        <img
-          src="{{ 'milk-denmark-logo2.png' | asset_img_url: 'large' }}"
-          class="logo bg-color"
-          width="158"
-          height="64"
-        >
-            <p class="text-white text-xs mt-2 pt-[32px]">&copy; {{ 'now' | date: "%Y" }} Milk Denmark. All rights reserved.</p>
-        <div class="flex flex-row gap-6">
-          <a href="https://www.facebook.com/milkdenmark" class="text-white hover:text-gray-900"> Terms </a>
-          <a href="https://www.instagram.com/milkdenmark/" class="text-white hover:text-gray-900"> Privacy </a>
-          <a href="https://www.instagram.com/milkdenmark/" class="text-white hover:text-gray-900"> Return Policy </a>
-
+    <div class="pt-[40px] pl-[100px] pr-[100px] pb-[60px]">
+      
+        <div class="flex flex-row justify-between">
+        <div class="flex justify-start items-center py-6 md:justify-start md:space-x-10">
+          <!-- STORE NAME / STORE LOGO -->
+          <div class="flex flex-col text-white">
+            <img
+              src="{{ 'milk-denmark-logo2.png' | asset_img_url: 'large' }}"
+              class="logo bg-color"
+              width="158"
+              height="64"
+            >
+            <p class="mt-2 pt-[32px]">&copy; {{ 'now' | date: '%Y' }} Milk Denmark. All rights reserved.</p>
+            <div class="flex flex-row gap-4 pt-2">
+              <a href="https://www.facebook.com/milkdenmark" class="font-thin hover:text-gray-900"> Terms </a>
+              <a href="https://www.instagram.com/milkdenmark/" class=" hover:text-gray-900"> Privacy </a>
+              <a href="https://www.instagram.com/milkdenmark/" class=" hover:text-gray-900">
+                Return Policy
+              </a>
+            </div>
+          </div>
         </div>
+
+        <div class="flex justify-end items-center py-6 md:justify-end md:space-x-[80px]">
+            {% comment %} MENU {% endcomment %}
+            <div class="flex flex-col">
+                <h3 class="text-white font-semibold py-8">MENU</h3>
+                <ul class="space-y-2">
+                    <li><a href="/collections" class="text-[#e0e0e0] hover:text-gray-300">Shop by Collection</a></li>
+                    <li><a href="/color" class="text-[#e0e0e0] hover:text-gray-300">Shop by Color</a></li>
+                    <li><a href="/style" class="text-[#e0e0e0] hover:text-gray-300">Shop by Style</a></li>
+                  </ul>
+            </div>
+            {% comment %} USERS {% endcomment %}
+            <div class="flex flex-col">
+                <h3 class="text-white font-semibold py-8">USERS</h3>
+                <ul class="space-y-2">
+                    <li><a href="/collections" class="text-[#e0e0e0] hover:text-gray-300">Account</a></li>
+                    <li><a href="/color" class="text-[#e0e0e0] hover:text-gray-300">Orders</a></li>
+                    <li><a href="/style" class="text-[#e0e0e0] hover:text-gray-300">Saved</a></li>
+                  </ul>
+            </div>
+            {% comment %} COMAPNY {% endcomment %}
+            <div class="flex flex-col">
+                <h3 class="text-white font-semi py-8">COMPANY</h3>
+                <ul class="space-y-2">
+                    <li><a href="/collections" class="text-[#e0e0e0] hover:text-gray-300">About</a></li>
+                    <li><a href="/color" class="text-[#e0e0e0] hover:text-gray-300">Contact</a></li>
+                    <li><a href="/style" class="text-[#e0e0e0] hover:text-gray-300">{% render 'icon-instagram' %}   </a></li>
+                  </ul>
+            </div>
+          </div>
+
       </div>
-      <div class=""></div>
+
     </div>
   </div>
 </div>
