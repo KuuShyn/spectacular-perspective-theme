@@ -9,7 +9,11 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-image": "url(//breastmil.myshopify.com/cdn/shop/t/3/assets/baby_large.jpg?v=90550805258474356221720114194)"
+      }
+    },
   },
   plugins: [],
 };

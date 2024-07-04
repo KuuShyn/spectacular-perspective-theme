@@ -18,11 +18,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 
   </head>
-  <body class="nanum-myeongjo-regular" >
+
+  <body class="bg-gray-700 nanum-myeongjo-regular" >
+    <div class=" container mx-auto max-w-[1280px]">
     {% section 'header' %}
     <main role="main">
+      {% section 'hero' %}
+      {% comment %} {% section 'passion' %} {% endcomment %}
       {{ content_for_layout }}
-      {% section 'footer' %}
+      {% comment %} {% section 'footer' %} {% endcomment %}
     </main>
+    </div>
   </body>
+  
 </html>
