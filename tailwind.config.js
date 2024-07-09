@@ -11,8 +11,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-image": "url(//breastmil.myshopify.com/cdn/shop/t/3/assets/baby_large.jpg?v=90550805258474356221720114194)"
-      }
+        "hero-image": "url(//breastmil.myshopify.com/cdn/shop/t/3/assets/baby_large.jpg?v=90550805258474356221720114194)",
+        "passion-image": "url(//breastmil.myshopify.com/cdn/shop/t/3/assets/berryleaf_large.png?v=142001938210005096811720222146)"
+
+      },
+      
     },
   },
   plugins: [],

@@ -596,10 +596,6 @@ video {
   position: relative;
 }
 
-.inset-0 {
-  inset: 0px;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -625,16 +621,8 @@ video {
   margin-left: 1rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .flex {
@@ -664,10 +652,6 @@ video {
 
 .h-auto {
   height: auto;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-full {
@@ -714,14 +698,6 @@ video {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
 }
@@ -732,16 +708,16 @@ video {
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -776,6 +752,11 @@ video {
   background-color: rgb(246 240 228 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -786,8 +767,24 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[center-top\] {
+  background-color: center-top;
+}
+
+.bg-\[center-top_1rem\] {
+  background-color: center-top 1rem;
+}
+
+.bg-\[center-top_5rem\] {
+  background-color: center-top 5rem;
+}
+
 .bg-hero-image {
   background-image: url(//breastmil.myshopify.com/cdn/shop/t/3/assets/baby_large.jpg?v=90550805258474356221720114194);
+}
+
+.bg-passion-image {
+  background-image: url(//breastmil.myshopify.com/cdn/shop/t/3/assets/berryleaf_large.png?v=142001938210005096811720222146);
 }
 
 .bg-cover {
@@ -798,9 +795,52 @@ video {
   background-position: center;
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+.bg-\[center\] {
+  background-position: center;
+}
+
+.bg-\[center_top_1rem\] {
+  background-position: center top 1rem;
+}
+
+.bg-\[center_top_2rem\] {
+  background-position: center top 2rem;
+}
+
+.bg-\[center_top_6rem\] {
+  background-position: center top 6rem;
+}
+
+.bg-\[center_top_8rem\] {
+  background-position: center top 8rem;
+}
+
+.bg-\[center_top_11rem\] {
+  background-position: center top 11rem;
+}
+
+.bg-\[center_top_21rem\] {
+  background-position: center top 21rem;
+}
+
+.bg-\[center_top_31rem\] {
+  background-position: center top 31rem;
+}
+
+.bg-\[center_top_41rem\] {
+  background-position: center top 41rem;
+}
+
+.bg-\[center_top_51rem\] {
+  background-position: center top 51rem;
+}
+
+.bg-\[center_top_50rem\] {
+  background-position: center top 50rem;
+}
+
+.bg-\[center_top_5rem\] {
+  background-position: center top 5rem;
 }
 
 .p-20 {
@@ -811,9 +851,8 @@ video {
   padding: 0.75rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-2 {
@@ -841,39 +880,17 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-7 {
+.py-7 {
   padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pt-8 {
   padding-top: 2rem;
 }
 
-.pt-\[32px\] {
-  padding-top: 32px;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .text-base {
@@ -881,21 +898,13 @@ video {
   line-height: 1.5rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-medium {
   font-weight: 500;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.font-thin {
-  font-weight: 100;
-}
-
-.text-\[\#e0e0e0\] {
-  --tw-text-opacity: 1;
-  color: rgb(224 224 224 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -939,11 +948,6 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.hover\:text-gray-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -963,24 +967,9 @@ video {
     padding-right: 0px;
   }
 
-  .sm\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
   .sm\:px-44 {
     padding-left: 11rem;
     padding-right: 11rem;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
@@ -997,20 +986,14 @@ video {
     justify-content: flex-start;
   }
 
-  .md\:justify-end {
-    justify-content: flex-end;
-  }
-
   .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-x-\[70px\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(70px * var(--tw-space-x-reverse));
-    margin-left: calc(70px * calc(1 - var(--tw-space-x-reverse)));
+  .md\:bg-\[center_top_31rem\] {
+    background-position: center top 31rem;
   }
 
   .md\:px-32 {
@@ -1021,6 +1004,16 @@ video {
   .md\:py-36 {
     padding-top: 9rem;
     padding-bottom: 9rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -1040,6 +1033,10 @@ video {
   .lg\:-translate-x-1\/2 {
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:bg-\[center_top_50rem\] {
+    background-position: center top 50rem;
   }
 
   .lg\:px-\[14rem\] {
