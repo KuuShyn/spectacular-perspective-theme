@@ -1,22 +1,3 @@
-
-<div class="bg-[#F6F0E4] relative w-full h-screen">
-    <img
-      src="{{ 'berryleaf.png' | asset_img_url: 'large' }}"
-      alt="Baby"
-      class="w-full h-screen object-cover"
-      width="1280"
-      height="700"
-    >
-    <div class="absolute inset-0 flex justify-center items-center">
-
-        <h1 class="text-white text-4xl sm:text-2xl">Hand Sketched with Passion</h1>
-        <div class="flex flex-row pt-8">
-          <h1 class="text-white text-6xl sm:text-4xl">Like mother's</h1>
-          <i class="px-2">{% render 'icon-milk-text' %}</i>
-          <h1 class="text-white text-6xl sm:text-4xl">and baby's</h1>
-          <i class="px-2">{% render 'icon-breath-text' %}</i>
-        </div>
-      </div>
-    </div>
-
-
+<section class="h-auto w-full flex justify-center items-center bg-[#F6F0E4] bg-cover md:bg-[center_top_31rem] lg:bg-[center_top_50rem] bg-passion-image  ">
+  <div class="flex justify-center w-full p-20 py-7 md:py-32 md:px-32 lg:py-56 lg:px-[14rem]">{% render 'passion-content' %}</div>
+</section>
